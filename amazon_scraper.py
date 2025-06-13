@@ -19,7 +19,7 @@ def load_defaults(filepath="default.txt"):
         "３０日件数": "0",
         "削除": "0"
     }
-    with open(filepath, encoding="utf-8") as f:
+    with open(filepath, encoding="shift-jis") as f:
         for line in f:
             if ":" not in line:
                 continue
